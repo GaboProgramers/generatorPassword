@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/75eec5443c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="logo">
+            <span>
+                GaboProgramers
+            </span>
+        </div>
+        <div class="logo">
+            <h1>
+                Generador De Contraseñas
+            </h1>
+        </div>
+
+        <form action="" class="app" id="app">
+            <div class="fila numero-caracteres">
+                <div class="col">
+                    <label for="numero-caracteres">Numero de Caracteres: </label>
+                </div>
+                <div class="col botones">
+                    <div>
+                        <button class="btn" id="btn-menos-uno">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <input type="text" id="numero-caracteres" readonly value="12">
+                    </div>
+                    <div>
+                        <button class="btn" id="btn-mas-uno">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fila simbolos">
+                <div class="col">
+                    <label for="simbolos">¿Incluir Simbolos?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-simbolos">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="fila numeros">
+                <div class="col">
+                    <label for="numeros">¿Incluir Numeros?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-numeros">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="fila mayusculas">
+                <div class="col">
+                    <label for="mayusculas">¿Incluir Mayusculas?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-mayusculas">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="fila generar">
+                <div class="col">
+                    <button class="btn btn-generar" id="btn-generar">
+                        Generar
+                        <i class="fa-solid fa-lock"></i>
+                    </button>
+                </div>
+                <div class="col">
+                    <input type="text" class="input-password" id="input-password" title="Copiar" readonly value="T3sT">
+                </div>
+            </div>
+
+            <div class="fila alerta">
+                <div class="col">
+                    <div class="alerta-copiado" id="alerta-copiado">
+                        <p>
+                            <i class="fa-solid fa-copy"></i>
+                            texto Copiado
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
